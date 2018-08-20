@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>자바스크립트 : 변수, 배열, 반복문, 조건문</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="opentutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="visualog">
+    <meta name="generator" content="Atom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/01.css">
+    <script type="text/javascript">
+      //변수 연습
+      var iNum = 3;
+      iNum = iNum + 5;
+      document.write("<p>" + iNum + "</p>");
+
+      var strColor = "파랑색";
+      document.write("<p>" + strColor + "</p>");
+
+      //배열 연습
+      var strDrink = new Array();
+      strDrink[0] = "커피";
+      strDrink[1] = "홍차";
+      strDrink[2] = "녹차";
+
+      //반복문 연습
+      var iCount = 0;
+      for (iCount = 0; iCount <= 2; iCount ++) {
+        document.write("<p>" + "숫자 :" + iCount + ", 음료수 :" + strDrink[iCount] + "</p>");
+      }
+
+      //판단문 연습
+      var dtDate = new Date();
+
+      var dtHour = dtDate.getHours();
+      if (dtHour >= 6&& dtHour <= 10) {
+        document.write("<strong>Good morning!</strong>");
+      } else {
+        document.write("<strong>How are you?</strong>");
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
